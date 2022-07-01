@@ -158,13 +158,13 @@ div section article:first-child {
 div section article div:first-child img {
     border-radius: 4px 4px 0 0;
 }
-
-div section article div:last-child {
+/* essa div está quebrando a div do about, refazer a primeira sessão! */
+/* div section article div:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 25px;
-}
+    padding: 0 25px; 
+} */
 
 div section article div:last-child img {
     width: 170px;
@@ -176,10 +176,70 @@ div section article div:last-child div {
     display: flex;
     flex-wrap: wrap;
 }
+
+.card-2{
+    height: 260px;
+    /* background-color: rgb(168, 64, 64); */
+    display: flex !important; 
+    flex-direction: column;
+    border-radius: 4px;
+}
+.card-2 h2, p, a{
+    margin: 0 20px 0 20px;
+}
+.card-2 p{
+    margin: 10px 20px 10px 20px;
+}
+.card-2 h2{
+    margin-top: 60px;
+    font: bold;
+}
+.card-2 a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color:#0275B1;
+
+}
+.btn-card-2-first{
+    text-transform: uppercase;
+    height: 50px;
+    width: 240px;
+    border: none;
+    background: linear-gradient(360deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+}
+.btn-card-2{
+    margin-top: 10px;
+    background-color: #FFF;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+div section article:nth-child(3) div:nth-child(1){
+    background-color: red;
+    height: 40px;
+}
+.card-3{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.card-3 div{
+    background-color: gray;
+    min-height: 250px;
+    min-width: 250px;     
+}
 /* Final das Sections Principal */
 
 /* Configuração dos Buttons */
-button {
+ /* button {
     width: 170px;
     height: 32px;
     background: linear-gradient(360deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
@@ -188,7 +248,7 @@ button {
     margin-right: 15px;
     font-size: 12px;
     color: #FFF;
-}
+}   */
 
 /* Incício do Aside */
 aside {
@@ -249,7 +309,6 @@ aside article div:last-child span {
     color: #000;
     margin-bottom: 10px;
 }
-
 /* Final do Aside */
 
 
