@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+}
+
+header {
+    background: #DC143C;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #FFF;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    padding: 0 130px;
+    display: table;
+}
+
+section {
+    float: left;
+    width: 75%;
+}
+
+div section article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div section article p {
+    font-size: 14px;
+}
+
+div section article:first-child {
+    height: 360px;
+}
+
+div section article div:first-child img {
+    border-radius: 4px 4px 0 0;
+}
+
+div section article div:last-child {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 25px;
+}
+
+div section article div:last-child img {
+    width: 170px;
+    height: 170px;
+    margin-top: -25px;
+}
+
+div section article div:last-child div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 170px;
+    height: 32px;
+    background: linear-gradient(360deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
+    border-radius: 4px;
+    border: 0;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #FFF;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+div aside article {
+    width: 100%;
+    height: 360px;
+}
+
+div aside article:first-child div:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #CCC;
+}
+
+div aside article:first-child div:first-child div p {
+    font-size: 10px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    background: #191970;
+    color: #FFF;
+    margin-top: 20px;
+    height: 100px;
+}
