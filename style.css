@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -126,8 +126,16 @@ img {
 .row {
     padding: 0 130px;
     display: table;
+    max-width: 1440px;
 }
 
+.card {
+    background-color: #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Início das Sections Principais */
 section {
     float: left;
     width: 75%;
@@ -168,7 +176,9 @@ div section article div:last-child div {
     display: flex;
     flex-wrap: wrap;
 }
+/* Final das Sections Principal */
 
+/* Configuração dos Buttons */
 button {
     width: 170px;
     height: 32px;
@@ -180,6 +190,7 @@ button {
     color: #FFF;
 }
 
+/* Incício do Aside */
 aside {
     float: left;
     width: 25%;
@@ -191,34 +202,82 @@ div aside article {
     height: 360px;
 }
 
-div aside article:first-child div:first-child div {
+aside article div div {
+    margin: 10px;
+}
+
+div aside article:first-child div:first-child div:first-child div:first-child {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #CCC;
 }
 
-div aside article:first-child div:first-child div p {
+div aside article:first-child div:first-child div p, small {
     font-size: 10px;
-    margin-top: 20px;
     flex-wrap: nowrap;
     text-align: center;
-    margin-right: 10px;
-    margin-left: 20px;
+    /* margin-right: 10px; */
+    /* margin-left: 20px; */
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
 }
 
-.card {
-    background-color: #FFF;
-    margin-top: 20px;
-    border-radius: 5px;
+div aside article:first-child div:first-child div p {
+    margin-left: 35px;
+    color: #0275B1;
+    font-weight: bold;
 }
+
+div aside article:first-child div:first-child div small {
+    font-weight: bold;
+}
+
+aside article:first-child div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+aside article div:last-child h2, h3, h4 {
+    color: #0275B1;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+aside article div:last-child span {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Final do Aside */
+
 
 footer {
-    padding: 20px;
+    padding: 10px 5px 10px 0;
     background: #191970;
     color: #FFF;
     margin-top: 20px;
+    height: 30vh;
+ }
+
+footer div {
+    /* background-color: #000; */
+    height: 4.3vh;
+    display: grid;
+    flex-wrap: nowrap;
+    /* grid-row-start: 3; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer div div {
     height: 100px;
+    border: 1px solid #CCC;
 }
 
 /* Parte de Zen - Final */
