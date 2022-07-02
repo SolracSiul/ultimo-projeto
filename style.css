@@ -49,7 +49,7 @@ body{
 .parte2 li{
     margin: 2px;
     height: 40px;
-    width: 80px;
+    width: 100px;
     text-align: center;
     list-style: none;
     display: flex;
@@ -199,7 +199,7 @@ div section article div:last-child div {
     margin-top: 20px;
     margin-bottom: 25px;
     color:#0275B1;
-
+    font-size: 12px;
 }
 .btn-card-2-first{
     text-transform: uppercase;
@@ -220,9 +220,15 @@ div section article div:last-child div {
     text-transform: uppercase;
     font-weight: bold;
 }
-div section article:nth-child(3) div:nth-child(1){
-    background-color: red;
-    height: 40px;
+.card .card-section-3{
+    margin: 20px ;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+}
+.card .card-section-3 span{
+    margin-left: 15px;
+    color: #747474;
 }
 .card-3{
     margin: 15px;
@@ -232,10 +238,144 @@ div section article:nth-child(3) div:nth-child(1){
     column-gap: 20px;
 }
 .card-3 div{
-    background-color: gray;
-    min-height: 250px;
+    margin-top: 15px;
+    min-height: 140px;
     min-width: 250px;     
 }
+.card-3 div img{
+    min-width: 100%;
+    height: 100%;
+}
+.card-3 div h2{
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+.card-3 div span{
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 8px;
+    color: gray;
+}
+.card-3 a{
+    color:#0275B1;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.card-3 a:hover{
+    text-decoration: underline;
+}
+.card-section-4{
+    margin: 15px;
+}
+.card-4{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 26px;
+    column-gap: 20px;
+    /* background-color: red; */
+}
+.card-4 div{
+    min-height: 80px;
+    min-width: 250px;     
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f4f4f4;
+    background-repeat: no-repeat;
+    background-image: url(./assets/img/users\ \(1\).png);
+    background-position: 10% 70%;
+}
+.card-4 div h2{
+    padding: 8px 0 0 15px;
+    font-size: 14px;
+}
+.card-4 div span{
+    padding: 8px 10px;
+    color: #0275B1;
+}
+.card-4 a{
+    color:#0275B1;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.card-5-experience{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 100px 100px;
+    gap: 10px;
+    margin: 15px;
+}
+.card-5-experience div{
+    background-color: aqua;
+    min-width: 50px;
+}
+.card-5-freelance{
+    display: flex;
+    flex-direction: row;
+}
+.card-5-freelance div{
+    background-color: red;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+}
+.card-5-freelance div:first-child{
+    background-color: yellowgreen;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: start;
+}
+.card-5-freelance div:first-child img{
+    width: 54px;
+    height: 54px;
+    margin-top: 11px;
+}
+.card-5-freelance div:first-child i{
+    color: white;
+    margin-top: 30px;
+    margin-left: -35px;
+}
+.card-5-freelance div:last-child{
+    background-color: rgb(208, 208, 153);
+    width:80%;
+}
+/* .card-5-fl-title{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom:5px; 
+    box-sizing: border-box;
+} */
+.card-5-freelance-parte2{
+    background-color: rgb(166, 124, 124) !important;
+    /* position: absolute; */
+}
+
+/* .card-5-freelance img:first-child{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 44px;
+    height: 46px;
+    background-color: blue;
+}
+.card-5-freelance i{
+    color: white;
+    margin-top: 45px;
+    margin-left: -30px;
+} */
+
+
+
 /* Final das Sections Principal */
 
 /* Configuração dos Buttons */
