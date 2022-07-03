@@ -5,7 +5,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: burlywood;
+    background-color: #E5E5E5;
 }
 
 /* Começo do header por luis - 14:28 - 02/07*/
@@ -149,21 +149,11 @@ main {
 }
 
 main section:first-child {
-    background-color: aqua;
     width: 100%;
-    height: 3000px;
 }
 
 main section:last-child {
-    background-color: aqua;
     width: 100%;
-    height: 2000px;
-}
-
-footer {
-    height: 215px;
-    background-color: #000;
-    margin-top: 40px;
 }
 
 /* .card {
@@ -490,27 +480,111 @@ h6{
 /* Final da quarta seção principal */
 
 /* Início da quinta seção principal */
+
+/* Começo das alterações por luis - 11:32 - dia 03/07/22 */
+
 .artigo5-quinta-secao {
     display: grid;
-    grid-template-rows: 180px 180px;
-    /* background-color: #2196F3; */
-    width: 100%;
-    height: 400px;
-    background-color: brown;
-    margin-bottom: 20px;
+    grid-template-columns: 0.1fr auto;
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 4px;
+} 
+.artigo5-quinta-secao > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 30px;
+    margin-left: 15px;
 }
+.artigo5-quinta-secao div:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+.artigo5-quinta-secao > div:nth-child(1) {
+    grid-column: 1 / span 2;
+    /* background-color:blueviolet */
+}
+.artigo5-quinta-secao div:nth-child(4){
+    /* background-color:red;  */
+    height: 54px;
+}
+.artigo5-quinta-secao div:nth-child(3){
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+}
+.artigo5-quinta-secao div:nth-child(3) div:nth-child(3) small:first-child, .artigo5-quinta-secao div:nth-child(5) div:nth-child(3) small:first-child{
+    color: black;
+}
+.artigo5-quinta-secao div:nth-child(3) div:nth-child(3) small:last-child, .artigo5-quinta-secao div:nth-child(5) div:nth-child(3) small:last-child{
+    color: blue;
+}
+.artigo5-quinta-secao div:nth-child(3) h6, .artigo5-quinta-secao div:nth-child(5) h6{
+    margin-bottom: -7px;
+}
+.artigo5-quinta-secao div:nth-child(3) p{
+    font-size: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.artigo5-quinta-secao div:nth-child(3) small, .artigo5-quinta-secao div:nth-child(5) small{
+    font-size: 10px;
+    padding-bottom:4px;
+}
+.artigo5-quinta-secao div:nth-child(5) p{
+    font-size: 10px;
+}
+.artigo5-quinta-secao div:nth-child(5){
+    margin-top: -25px;
+}
+/* inicio da quinta seção luis - 14:26 - 03/07 */
+
+
 /* Final da quinta seção principal */
 
 /* Início da sexta seção principal */
 .artigo6-sexta-secao {
     display: grid;
-    grid-template-rows: 180px 180px;
-    /* background-color: #2196F3; */
-    width: 100%;
-    height: 400px;
-    background-color: darksalmon;
-    margin-bottom: 20px;
+    grid-template-columns: 0.2fr auto;
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 4px;
+    padding-left: 25px;
+    box-sizing: border-box;
 }
+.artigo6-sexta-secao > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+.artigo6-sexta-secao div:first-child{
+    grid-column: 1 / span 2;
+    /* color: red; */
+    font-size: 18px;
+    margin-left: 1px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.artigo6-sexta-secao div:nth-child(3){
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+.artigo6-sexta-secao div:nth-child(3) h6{
+    font-size: 14px;
+}
+.artigo6-sexta-secao div:nth-child(3) p{
+    font-size: 12px;
+}
+.artigo6-sexta-secao div:nth-child(3) small{
+    font-size: 10px;
+    color: gray;
+   
+}
+
 
 /* Final da sexta seção principal */
 
@@ -771,3 +845,135 @@ h5 {
 }
 
 /* Final da Aside 3 */
+
+footer {
+    height: 215px;
+    background-color:#F7F9FB;
+    margin-top: 40px;
+}
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #0077B5; */
+    height: 215px;
+    display:grid;
+    grid-template-columns: 4vw 8vw 10vw 12vw 13vw auto;
+    column-gap: 10px;
+    box-sizing: border-box;
+}
+.container-footer div{
+    margin-top: 20px;
+    /* background-color: gray; */
+    height: 150px;
+}
+.container-footer div:first-child{
+    /* background-color: red !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-footer div:first-child img{
+    width: 46px;
+    height: 46px;
+}
+.container-footer div:first-child div{
+    /* background-color: #698b9e; */
+    display: flex;
+}
+.container-footer div:first-child div p{
+    font-size: 14px;
+}
+.container-footer div:first-child div small{
+    margin-top: 0.4px;
+    margin-left: 1.1px;
+    color: blue;
+}
+.container-footer-2 p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.container-footer-2{
+    display: flex;
+    flex-direction: column;
+}
+.container-footer-2 ul li{
+    margin-top: 10px;
+    list-style: none;
+    font-size: 12px;
+}
+.container-footer div:nth-child(3){
+    /* background-color: red; */
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+.container-footer div:nth-child(3) ul li{
+    list-style: none;
+    padding-top:10px;
+    font-size: 12px;
+}
+.container-footer div:nth-child(4){
+    /* background-color: yellow;  */
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+.container-footer div:nth-child(4) ul li{
+    list-style: none;
+    padding-top:10px;
+    font-size: 12px;
+}
+.container-footer-5{
+    display: flex;
+    flex-direction: column;
+}
+.container-footer-5 p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.container-footer-5 div{
+    display: flex;
+    flex-direction: column;
+}
+.container-footer-5 div button:first-child{
+    text-transform: uppercase;
+    height: 32px;
+    width: 170px;
+    border: none;
+    background: linear-gradient(360deg, rgba(14,103,149,1) 0%, rgba(0,119,181,1) 100%);
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    margin-top: 10px;
+}
+.container-footer-5 div button:last-child{
+    background-color: #FFF;
+    width: 170px;
+    height: 32px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0077B5;
+    margin-top: 10px;
+}
+.container-footer div:nth-child(6) p{
+    /* color: red; */
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -15px;
+}
+.container-footer div:nth-child(6) button{
+    background-color: #FFF;
+    width: 170px;
+    height: 32px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0077B5;
+    margin-top: 20px;
+}
+.container-footer div:nth-child(6) {
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top: 15px;
+}
