@@ -159,12 +159,12 @@ div section article div:first-child img {
     border-radius: 4px 4px 0 0;
 }
 /* essa div está quebrando a div do about, refazer a primeira sessão! */
-/* div section article div:last-child {
+ div section article div:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0 25px; 
-} */
+}
 
 div section article div:last-child img {
     width: 170px;
